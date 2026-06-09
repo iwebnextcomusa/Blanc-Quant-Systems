@@ -121,12 +121,6 @@ export default function App() {
           {/* Right Action Trigger */}
           <div className="hidden md:flex items-center gap-6">
             <a
-              href="mailto:jblanc86@gmail.com"
-              className="text-xs font-mono text-slate-500 hover:text-white transition-colors"
-            >
-              jblanc86@gmail.com
-            </a>
-            <a
               href="#contact"
               className="px-6 py-2 border border-brand-accent/50 text-brand-accent text-xs font-bold uppercase tracking-widest hover:bg-brand-accent/10 transition-all rounded-sm"
             >
