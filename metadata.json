@@ -1,6 +1,6 @@
 {
   "name": "Blanc Quant Systems",
-  "description": "High-fidelity website showcase of Blanc Quant Systems, a sophisticated technology and quantitative systems consulting firm based in Philadelphia.",
+  "description": "High-fidelity website showcase of Blanc Quant Systems, a sophisticated technology and quantitative systems consulting firm.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

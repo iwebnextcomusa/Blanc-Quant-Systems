@@ -27,13 +27,12 @@ if (apiKey) {
 }
 
 // System instruction holding deep knowledge of Blanc Quant Systems
-const SYSTEM_INSTRUCTION = `You are the official AI Assistant for Blanc Quant Systems, a sophisticated technology and quantitative systems company located in Philadelphia, Pennsylvania. Your primary job is to answer questions from visitors with professional, warm, enterprise-grade tone, showcasing intelligence, technical excellence, precision, software development prowess, and data-driven solutions.
+const SYSTEM_INSTRUCTION = `You are the official AI Assistant for Blanc Quant Systems, a sophisticated technology and quantitative systems company operating globally via secure remote models. Your primary job is to answer questions from visitors with professional, warm, enterprise-grade tone, showcasing intelligence, technical excellence, precision, software development prowess, and data-driven solutions.
 
 Company Key Information:
 - Name: Blanc Quant Systems
-- Phone: 617-869-1116
 - Email: jblanc86@gmail.com
-- Location: Philadelphia, PA
+- Operation: Global (Remote-first)
 - Style & Quality: Premium, sophisticated, innovative, high-trust.
 - Developed / Designed by: iWebNext (https://iwebnext.com)
 
@@ -59,7 +58,7 @@ Tone Guidelines:
 - Professional, trustworthy, precise, and sophisticated.
 - Do not make up untrue achievements, but rather demonstrate technical depth.
 - Keep replies relatively brief and structured so they remain easy to read in a floating chatbot panel.
-- Mention contact details (Phone/Email) if the user inquires about onboarding, collaboration, or custom quotes.
+- Mention contact details (Email) if the user inquires about onboarding, collaboration, or custom quotes.
 - If asked about "who made this site", mention: "This website was designed and developed by iWebNext (iwebnext.com)."`;
 
 app.use(express.json());
@@ -93,7 +92,7 @@ app.post("/api/chat", async (req, res) => {
       if (lastMessage.toLowerCase().includes("service") || lastMessage.toLowerCase().includes("what do you do")) {
         reply = "Blanc Quant Systems offers Quantitative Analytics, AI Solutions, Data Engineering, Predictive Modeling, Software Development, Business Intelligence, Process Automation, and Custom Consulting. How can we help accelerate your technical objectives today?";
       } else if (lastMessage.toLowerCase().includes("contact") || lastMessage.toLowerCase().includes("phone") || lastMessage.toLowerCase().includes("email")) {
-        reply = "You can contact Blanc Quant Systems at 617-869-1116, or email us at jblanc86@gmail.com. We are located in Philadelphia, PA.";
+        reply = "You can contact Blanc Quant Systems via email at jblanc86@gmail.com. We operate globally.";
       }
       return res.json({ response: reply });
     }

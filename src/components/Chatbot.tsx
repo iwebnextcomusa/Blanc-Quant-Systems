@@ -9,7 +9,7 @@ export default function Chatbot() {
     {
       id: "init-message",
       role: "assistant",
-      content: "Welcome to Blanc Quant Systems. I am your specialized AI Strategy Assistant. If you have any inquiries regarding our analytics pipelines, quantitative modeling models, automation services, or Phila location, feel free to ask me!",
+      content: "Welcome to Blanc Quant Systems. I am your specialized AI Strategy Assistant. If you have any inquiries regarding our analytics pipelines, quantitative modeling models, or automation services, feel free to ask me!",
       timestamp: new Date(),
     },
   ]);
@@ -92,7 +92,7 @@ export default function Chatbot() {
 
   const QUICK_PROMPTS = [
     "Tell me about Quantitative Analytics",
-    "Where are you located in Philadelphia?",
+    "What are your core engineering services?",
     "How does your AI help healthcare?",
     "How can I contact Blanc Quant?",
   ];

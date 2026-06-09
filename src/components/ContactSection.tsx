@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import { Mail, Phone, MapPin, Send, HelpCircle, CheckCircle } from "lucide-react";
+import { Mail, Send, HelpCircle, CheckCircle } from "lucide-react";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -49,53 +49,14 @@ export default function ContactSection() {
           <div className="lg:col-span-5 space-y-8" id="corporate-info-column">
             <div>
               <h3 className="font-display font-semibold text-xl text-white mb-4">
-                Corporate Headquarters
+                Corporate Inquiries
               </h3>
               <p className="text-sm text-gray-400 leading-relaxed font-sans">
-                Our quant systems engineers and consultants are headquartered in the historic core of Philadelphia, Pennsylvania. We offer both cloud-based secure remote audits and onsite technical transformation runs.
+                Our quant systems engineers and consultants operate globally via secure, encrypted channels. We offer full remote audits, private model integrations, and structured software development sprints.
               </p>
             </div>
 
             <div className="space-y-4" id="contacts-listing">
-              {/* Address */}
-              <div className="flex gap-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-800 transition-colors">
-                <div className="p-3 rounded-lg bg-brand-accent/10 border border-brand-accent/20 text-brand-accent h-fit">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="text-[10px] font-mono text-gray-400 uppercase tracking-widest leading-none mb-1.5">
-                    Location Node
-                  </h4>
-                  <p className="text-sm font-semibold text-white">
-                    Philadelphia, Pennsylvania
-                  </p>
-                  <span className="text-[10px] text-slate-500 font-mono">
-                    39.9526° N, 75.1652° W
-                  </span>
-                </div>
-              </div>
-
-              {/* Phone */}
-              <a
-                href="tel:617-869-1116"
-                className="flex gap-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800/80 hover:border-brand-accent/30 hover:bg-slate-900/60 transition-all group"
-              >
-                <div className="p-3 rounded-lg bg-brand-accent/10 border border-brand-accent/20 text-brand-accent h-fit">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="text-[10px] font-mono text-gray-400 group-hover:text-brand-accent uppercase tracking-widest leading-none mb-1.5 transition-colors">
-                    Telephone Line
-                  </h4>
-                  <p className="text-sm font-semibold text-white group-hover:text-glow transition-all">
-                    617-869-1116
-                  </p>
-                  <span className="text-[10px] text-slate-500 font-mono">
-                    MON - FRI // 0900 - 1800 EST
-                  </span>
-                </div>
-              </a>
-
               {/* Email */}
               <a
                 href="mailto:jblanc86@gmail.com"
@@ -134,7 +95,7 @@ export default function ContactSection() {
                   Corporate Briefing Registered
                 </h3>
                 <p className="text-xs text-gray-400 max-w-sm mx-auto font-sans leading-relaxed">
-                  Your inquiry has been logged securely onto our database. A Blanc Quant Systems systems engineer from our Phila, PA office will contact you back in less than 24 hours.
+                  Your inquiry has been logged securely onto our database. A Blanc Quant Systems systems engineer will contact you back in less than 24 hours.
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
@@ -223,55 +184,6 @@ export default function ContactSection() {
                 </div>
               </form>
             )}
-          </div>
-        </div>
-
-        {/* Interactive Map Block coordinates simulation overlay */}
-        <div className="mt-14 rounded-2xl overflow-hidden glass-card border border-slate-800 p-2 relative group shadow-2xl">
-          <div className="relative aspect-[16/7] w-full bg-slate-950 rounded-xl overflow-hidden">
-            {/* Structured diagram map lines simulation background mapping */}
-            <div className="absolute inset-0 bg-[radial-gradient(#1e293b_1.2px,transparent_1.2px)] [background-size:16px_16px] opacity-40"></div>
-            
-            {/* Interactive geographic vector design representing Philadelphia Downtown mapping */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              {/* Concentric rings styled like standard vector sonar radar targeting */}
-              <div className="w-48 h-48 rounded-full border border-brand-accent/25 animate-pulse absolute"></div>
-              <div className="w-96 h-96 rounded-full border border-brand-blue/10 absolute animate-pulse-slow"></div>
-              <div className="w-[450px] h-[450px] rounded-full border border-dashed border-slate-800/70 absolute"></div>
-              
-              {/* Central Philly node overlay */}
-              <div className="relative z-10 flex flex-col items-center">
-                <div className="w-3.5 h-3.5 rounded-full bg-brand-accent animate-ping absolute"></div>
-                <div className="w-4 h-4 rounded-full bg-brand-accent border-2 border-[#0b0f19] shadow-md shadow-brand-accent"></div>
-                <div className="mt-3.5 py-1.5 px-3 rounded-lg bg-brand-dark/95 border border-brand-accent/40 shadow-xl backdrop-blur-sm text-center">
-                  <h4 className="font-display font-bold text-xs tracking-wider text-white">PHILADELPHIA REGION</h4>
-                  <p className="text-[9px] font-mono text-brand-accent tracking-widest mt-0.5">// BLANC_QUANT_CORE</p>
-                </div>
-              </div>
-
-              {/* Auxiliary fake coordinates dots surrounding center */}
-              <div className="absolute -top-10 left-1/4 flex gap-1.5 items-center font-mono text-[8px] text-slate-500">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
-                <span>SCH_NODE_2_OFF_95</span>
-              </div>
-              <div className="absolute bottom-1/4 right-1/4 flex gap-1.5 items-center font-mono text-[8px] text-slate-500">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span>DATA_STREAM_PIPELINE_OK</span>
-              </div>
-            </div>
-
-            {/* Simulated UI labels */}
-            <div className="absolute bottom-5 left-5 bg-slate-950/80 border border-slate-800 p-3 rounded-lg text-[9px] font-mono text-gray-400 backdrop-blur-sm">
-              <p className="text-white font-semibold mb-1">COMPASS TELEMETRY GRID</p>
-              <p>LAT: 39° 57&apos; 9.4&quot; N</p>
-              <p>LON: 75° 9&apos; 54.7&quot; W</p>
-              <p className="text-brand-accent">GPS MATCH: VERIFIED</p>
-            </div>
-            
-            <div className="absolute top-5 right-5 bg-slate-950/80 border border-slate-800 py-1.5 px-3 rounded-lg text-[9px] font-mono text-brand-accent backdrop-blur-sm flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
-              SECURE CONNECT TO LOCAL DISTRICT
-            </div>
           </div>
         </div>
       </div>

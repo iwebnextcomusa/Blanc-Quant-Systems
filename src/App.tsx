@@ -205,8 +205,7 @@ export default function App() {
                 >
                   CONTACT NODE
                 </a>
-                <div className="pt-4 border-t border-slate-900 flex justify-between items-center text-xs font-mono">
-                  <span className="text-gray-400">TEL: 617-869-1116</span>
+                <div className="pt-4 border-t border-slate-900 flex justify-center items-center text-xs font-mono">
                   <a href="mailto:jblanc86@gmail.com" className="text-brand-accent">jblanc86@gmail.com</a>
                 </div>
               </div>
@@ -249,7 +248,7 @@ export default function App() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-lg text-sm sm:text-base text-slate-400 leading-relaxed mb-10 font-sans"
           >
-            Enterprise-grade data engineering, predictive modeling, and AI automation tailored for the most demanding technical landscapes in Philadelphia and beyond.
+            Enterprise-grade data engineering, predictive modeling, and AI automation tailored for the most demanding technical landscapes.
           </motion.p>
 
           {/* CTAs matching Sophisticated Dark exactly */}
@@ -316,7 +315,7 @@ export default function App() {
               </h2>
               
               <p className="text-sm text-gray-400 font-sans leading-relaxed">
-                Blanc Quant Systems was established in Philadelphia, Pennsylvania, with a singular mission: to integrate superior mathematical rigor with production-grade engineering structures. We bridge the gap between high-level academic statistics and bulletproof corporate software systems.
+                Blanc Quant Systems was established with a singular mission: to integrate superior mathematical rigor with production-grade engineering structures. We bridge the gap between high-level academic statistics and bulletproof corporate software systems.
               </p>
               
               <p className="text-sm text-gray-400 font-sans leading-relaxed">
@@ -645,7 +644,7 @@ export default function App() {
                   <div className="whitespace-pre-wrap pt-2">
                     {selectedBlog.content}
                     {"\n\nTo capture operational margins and avoid SaaS security limits on strategic calculations streams, it is critical to rely on scalable private infrastructures hosted in-house natively."}
-                    {"\n\nOur Phila team guides clients throughout entire assessment, modeling blueprints, continuous integration loops, and dedicated telemetry audits to guarantee continuous resilience across market volatility shifts."}
+                    {"\n\nOur specialized team guides clients throughout entire assessment, modeling blueprints, continuous integration loops, and dedicated telemetry audits to guarantee continuous resilience across market volatility shifts."}
                   </div>
                 </div>
 
@@ -688,7 +687,7 @@ export default function App() {
           </div>
           
           <p className="text-[11px] text-gray-500 font-mono tracking-widest">
-            SECURED TELEMETRY NODES RUNNING // PHILADELPHIA PA, USA
+            SECURED TELEMETRY NODES RUNNING // CLOUD INTEGRATED VIRTUAL LAYER
           </p>
 
           <p className="text-[11px] text-gray-400 font-sans">
